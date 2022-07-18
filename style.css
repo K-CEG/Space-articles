@@ -1,0 +1,245 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background-color: rgb(104, 157, 236);
+}
+.sticky-style {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  background-color: rgb(104, 157, 236);
+  padding-top: 1px;
+  opacity: 0.9;
+}
+.sticky-style:hover {
+  opacity: 1;
+  background-color: blue;
+}
+.header-style,
+.header-button {
+  margin: 10px;
+}
+.header-button {
+  border-radius: 10px;
+  height: 25px;
+  font-weight: 700;
+  background-color: burlywood;
+}
+.content-position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-content {
+  background-color: burlywood;
+  border: 4px solid black;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.cards {
+  background-color: burlywood;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20vw;
+  height: 450px;
+  margin: 15px;
+  padding-left: 5%;
+  border: 5px solid black;
+}
+.articles-field {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 30vw 30vw 30vw;
+}
+li {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  list-style-type: none;
+}
+.limit-button {
+  font-weight: 700;
+  border-radius: 10px;
+  height: 25px;
+  background-color: rgb(104, 157, 236);
+}
+.limit-input {
+  text-align: center;
+  margin: 10px;
+  width: 150px;
+  font-weight: 700;
+}
+.link-button button,
+.link-button {
+  width: 100px;
+}
+.article-button,
+.link-button button {
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: rgb(104, 157, 236);
+  margin: 5px;
+  margin-left: 0px;
+}
+.article-button {
+  width: 120px;
+}
+.loading {
+  opacity: 0;
+  display: flex;
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease-in;
+}
+.loading.show {
+  opacity: 1;
+}
+.ball {
+  background-color: gray;
+  border-radius: 50%;
+  margin: 5px;
+  height: 10px;
+  width: 10px;
+  animation: jump 0.5s ease-in infinite;
+}
+.ball:nth-of-type(2) {
+  animation-delay: 0.1s;
+}
+.ball:nth-of-type(3) {
+  animation-delay: 0.2s;
+}
+.sort-style {
+  height: 40px;
+  background-color: burlywood;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+  border: 4px solid black;
+}
+.sort-button,
+.link-button button {
+  font-weight: 700;
+  border-radius: 10px;
+  height: 25px;
+  background-color: rgb(104, 157, 236);
+}
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@media (max-width: 890px) {
+  .articles-field {
+    grid-template-columns: 50vw 50vw;
+  }
+  .cards {
+    width: 30vw;
+  }
+}
+@media (max-width: 630px) {
+  .sort-style {
+    height: 60px;
+  }
+  .sort-style button {
+    height: 50px;
+  }
+}
+@media (max-width: 540px) {
+  .articles-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards {
+    width: 70vw;
+  }
+}
+@media (max-width: 440px) {
+  .nav-content label {
+    width: 60px;
+  }
+}
+@media (max-width: 400px) {
+  .nav-content {
+    flex-direction: column;
+    padding: 5px;
+  }
+  .nav-content label {
+    width: 110px;
+  }
+}
+@media (max-width: 350px) {
+  .sort-style {
+    height: 80px;
+  }
+  .sort-style button {
+    height: 70px;
+  }
+}
+@media (max-width: 300px) {
+  .sticky-style {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-style {
+    text-align: center;
+    margin: 0px;
+  }
+}
+@media (max-width: 290px) {
+  .sort-style {
+    flex-direction: column;
+    padding: 10px 0px 10px 0px;
+  }
+  .sort-style button {
+    margin: 2px;
+  }
+}
+@media (max-width: 250px) {
+  .cards {
+    height: 600px;
+    font-size: 13px;
+  }
+  .header-button,
+  .sort-button,
+  .article-button,
+  .link-button button {
+    font-size: 11px;
+  }
+  .sticky-style {
+    font-size: 13px;
+  }
+}
+@media (max-width: 240px) {
+  .sort-style {
+    height: 120px;
+  }
+}
+@media (max-width: 190px) {
+  .article-button {
+    width: 100px;
+  }
+  .limit-button {
+    height: 40px;
+  }
+  .limit-input {
+    width: 100px;
+  }
+}

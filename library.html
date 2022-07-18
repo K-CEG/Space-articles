@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script defer src="library.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sticky-style">
+      <h1 class="header-style">Library</h1>
+      <form action="index.html">
+        <input class="header-button" type="submit" value="Back to Home page" />
+      </form>
+    </div>
+    <div class="sort-style">
+      <button class="sort-button" onclick="sortByDate()">
+        Sort by published date
+      </button>
+      <button class="sort-button" onclick="sortByReverseDate()">
+        Sort by reverse published date
+      </button>
+      <button class="sort-button" onclick="sortByTitle()">Sort by title</button>
+      <button class="sort-button" onclick="sortByReverseTitle()">
+        Sort by reverse title
+      </button>
+    </div>
+    <div id="result" class="articles-field"></div>
+  </body>
+</html>

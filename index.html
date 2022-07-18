@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="sticky-style">
+      <h1 class="header-style">Home page</h1>
+      <form action="library.html" > 
+        <input class="header-button" value="Go to Library"  type="submit"  onclick="saveArticle()"/>
+      </form> 
+      <div class="header-style" id="sticky-info" ></div>
+    </div>
+      <div class="nav-content">
+        <label>limit of articles:</label>
+        <input onclick="inputInsertValue()" id="article-number" class="limit-input"></input>
+          <button class="limit-button" onclick="insertQuantityOfArticle()">Download articles</button>
+        </div>
+        <div class="articles-field" id="create-list"></div>
+      <div class="loading">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+      </div>
+    </body>
+</html>
